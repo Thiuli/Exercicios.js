@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cálculo de Taxa de Natalidade e Mortalidade</title>
+</head>
+<body>
+  <h1>Cálculo de Taxa</h1>
+  <p>Escolha o indicador que você deseja calcular:</p>
+  <select id="indicador">
+    <option value="natalidade">Natalidade</option>
+    <option value="mortalidade">Mortalidade</option>
+  </select>
+  <br>
+  <div id="natalidade">
+    <label for="nascidos">Número de nascidos:</label>
+    <input type="number" id="nascidos">
+  </div>
+  <div id="mortalidade">
+    <label for="obitos">Número de óbitos:</label>
+    <input type="number" id="obitos">
+  </div>
+  <br>
+  <label for="habitantes">Número de habitantes:</label>
+  <input type="number" id="habitantes">
+  <br>
+  <button onclick="calcular()">Calcular</button>
+  <br>
+  <p id="resultado"></p>
+</body>
+<script src="script.js"></script>
+</html>
